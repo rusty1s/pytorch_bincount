@@ -6,6 +6,16 @@ if torch.cuda.is_available():
 
 
 def bincount(src, size=None):
+    """Counts the number of occurrences of each value in a non-negative tensor.
+
+    Args:
+        src (Tensor): The input tensor.
+
+    :rtype: :class:`LongTensor`
+    """
+
+    src = src.contiguous().view(-1)
+
     if src.is_cuda:
         size = src.max() + 1 if size is None else size
         return bincount_cuda.bincount(src, size)
