@@ -10,7 +10,7 @@ def bincount(src, size=None):
 
     Args:
         src (Tensor): The input tensor.
-        size (int, optional): The maximum number of occurrences.
+        size (int, optional): The maximum number of bins for the output array.
             (default: `None`)
 
     :rtype: :class:`LongTensor`

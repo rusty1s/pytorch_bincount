@@ -33,7 +33,7 @@ Counts the number of occurrences of each value in a non-negative tensor.
 ### Parameters
 
 * **src** *(Tensor)* - The input tensor.
-* **size** *(int, optional)* - The maximum number of occurrences. (default: `None`)
+* **size** *(int, optional)* - The maximum number of bins for the output array. (default: `None`)
 
 ### Returns
 
