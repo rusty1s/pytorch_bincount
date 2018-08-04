@@ -14,7 +14,7 @@
 --------------------------------------------------------------------------------
 
 **PyTorch 0.4.1 now supports [`bincount`](https://pytorch.org/docs/stable/torch.html?highlight=bincount#torch.bincount).
-Therefore, this package is no longer needed and will not be updated.
+Therefore, this package is no longer needed and will not be updated.**
 
 --------------------------------------------------------------------------------
 
