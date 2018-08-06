@@ -15,7 +15,7 @@ __global__ void bincount_cuda_kernel(scalar_t *__restrict__ src, int64_t *out,
 }
 
 at::Tensor bincount_cuda(at::Tensor src, int64_t size) {
-  auto out = at::zeros(src.type().toScalarType(at::kLong), {size});
+  auto out = at::zeros(size, src.type().toScalarType(at::kLong));
 
   AT_DISPATCH_ALL_TYPES(src.type(), "bincount_cuda_kernel", [&] {
     bincount_cuda_kernel<scalar_t><<<BLOCKS(src.numel()), THREADS>>>(
