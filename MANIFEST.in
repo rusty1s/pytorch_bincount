@@ -1,3 +1,2 @@
 include LICENSE
-include cuda/bincount.cpp
-include cuda/bincount_kernel.cu
+recursive-include cuda *
