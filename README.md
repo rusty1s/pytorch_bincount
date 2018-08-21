@@ -32,10 +32,11 @@ $ echo $CPATH
 Then run:
 
 ```
-pip install torch-scatter torch-bincount
+pip install torch-bincount
 ```
 
 If you are running into any installation problems, please create an [issue](https://github.com/rusty1s/pytorch_bincount/issues).
+Be sure to import `torch` first before using this package to resolve symbols the dynamic linker must see.
 
 ## Usage
 
