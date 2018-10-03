@@ -11,6 +11,13 @@
 [![Build Status][build-image]][build-url]
 [![Code Coverage][coverage-image]][coverage-url]
 
+--------------------------------------------------------------------------------
+
+**PyTorch 0.4.1 now supports [`bincount`](https://pytorch.org/docs/stable/torch.html#torch.bincount) both for CPU and GPU.
+Therefore, this package is no longer needed and will not be updated.**
+
+--------------------------------------------------------------------------------
+
 This package consists of a small extension library of a highly optimized `bincount` operation for the use in [PyTorch](http://pytorch.org/), which is missing in the main package.
 The operation works on varying data types and is implemented both for CPU and GPU.
 
